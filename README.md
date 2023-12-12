@@ -7,7 +7,6 @@ Combines:
 - Tailwind + PostCSS
 - Bun (dev/build)
 - Cloudflare Pages (deploy via github)
-- 
 
 To use: 
 
