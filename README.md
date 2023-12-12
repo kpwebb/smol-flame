@@ -10,12 +10,12 @@ Combines:
 
 To use: 
 
-```$ bun run dev```
+```$ bun run make```
 
 To build (for Cloudflare Pages support):
 
-```$ bun run build```
+```$ bun run bake```
 
 To deploy (for Cloudflare Workers support):
 
-```$ bun run deploy```
+```$ bun run shake```
