@@ -2,7 +2,7 @@
   "scripts": {
     "make": "bun run --hot src/server.tsx | bun run make:css",
     "make:css": "tailwindcss  -o static/main.css --watch",
-    "bake" :"bun run bake.ts && bun run make:css",  
+    "bake" :"bun run bake.ts && bun run bake:css",  
     "bake:css": "tailwindcss  -o dist/static/main.css --minify",
     "shake" :"deploy"  
   },
