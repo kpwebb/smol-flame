@@ -1,8 +1,6 @@
 {
-  "types": "dist/index.d.ts",
-  "module": "dist/index.js",
   "scripts": {
-    "make": "bun run --hot src/server.tsx | bun run make:css",
+    "make": "bun run --hot src/server_dev.tsx | bun run make:css",
     "make:css": "tailwindcss  -o static/main.css --watch",
     "bake": "bun run bake.ts && bun run bake:css",
     "bake:css": "tailwindcss  -o dist/static/main.css --minify",

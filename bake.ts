@@ -1,21 +1,29 @@
 import fs from 'fs';
 
+// remove dev css before syncing files
+try {
+  fs.rmdirSync('./dist/', {recursive:true})
+  }
+catch {
+  console.log("WARN: copy dist files failed");
+}
+
 try {
 await Bun.build({
-    entrypoints: ['./src/server.tsx'],
+    entrypoints: ['./src/server_prod.ts'],
     outdir: './dist',
-    minify: true,
+    //minify: true,
     format: "esm"
   });
 
-  fs.renameSync('./dist/server.js', './dist/_worker.js'); 
+  fs.renameSync('./dist/server_prod.js', './dist/_worker.js'); 
 }
 catch {
   console.log("ERROR: production build failed");
 }
 
 try {
-fs.mkdirSync('./dist/static', {recursive: true})
+  fs.mkdirSync('./dist/static', {recursive: true})
 }
 catch {
   console.log("WARN: copy static files failed");
@@ -23,7 +31,7 @@ catch {
 
 // remove dev css before syncing files
 try {
-fs.rmSync('./static/main.css')
+  fs.rmSync('./static/main.css')
 }
 catch {
   console.log("WARN: copy static files failed");
@@ -31,7 +39,7 @@ catch {
 
 // copy contents from ./static to ./dist/static
 try {
-fs.cpSync('./static', './dist/static', {recursive: true});
+  fs.cpSync('./static', './dist/static', {recursive: true});
 }
 catch {
   console.log("WARN: copy static files failed");
@@ -40,10 +48,10 @@ catch {
 // copy favicon to root
 try {
   fs.cpSync('./static/favicon.ico', './dist', {recursive: true});
-  }
+}
   catch {
     console.log("WARN: copy favicon failed");
-  }
+}
   
-  
+
 
