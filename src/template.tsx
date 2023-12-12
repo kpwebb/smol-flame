@@ -18,7 +18,7 @@ return c.html(
             </>
             )}
             */}
-            <link href="/main.css" rel="stylesheet"/>
+            <link href="/static/main.css" rel="stylesheet"/>
         </head>
         <body>
             {content}
