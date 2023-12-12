@@ -12,6 +12,7 @@ To use:
 
 ```
 $ git clone https://github.com/kpwebb/smol-flame
+$ cd smol-flame
 $ bun install
 $ bun make
 ```
