@@ -6,16 +6,17 @@ Combines:
 - Hono
 - Tailwind + PostCSS
 - Bun (dev/build)
-- Cloudflare Workers/Pages (deploy)
+- Cloudflare Pages (deploy via github)
+- 
 
 To use: 
 
-```$ bun run make```
+```$ bun make```
 
-To build (for Cloudflare Pages support):
+To build (Cloudflare Pages support via Github integration):
 
-```$ bun run bake```
+```$ bun bake```
 
-To deploy (for Cloudflare Workers support):
+To deploy (WIP Cloudflare Workers support):
 
-```$ bun run shake```
+```$ bun shake```
