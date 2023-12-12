@@ -16,7 +16,7 @@ $ bun install
 $ bun make
 ```
 
-Edit  page template in `src/template.tsx` and edit routes and page content in `src/main.tsx`
+Edit  page template in `src/template.tsx` and edit routes and page content in `src/main.tsx`. Files in `static/` are recursively copied into `dist/` build directory and served from `site.com/static`
 
 To build (Cloudflare Pages support via Github integration):
 
