@@ -7,7 +7,7 @@ const app = new Hono()
 
 app.get('/', (c:Context) => {
   return pageTemplate(c, (( 
-    <h1 class="text-2xl text-orange-400 p-10">🕯️ smol flame</h1>
+    <h1 class="text-2xl text-blue-500 p-10">🕯️ smol flame</h1>
   ) as HtmlEscapedString));
 });
 
