@@ -5,7 +5,7 @@ A tiny template for minimalism on the edge. Maximum legibility, zero magic.
 Combines:
 - Hono
 - Tailwind + PostCSS
-- Bun (dev)
+- Bun (dev/build)
 - Cloudflare Workers/Pages (deploy)
 
 To use: 

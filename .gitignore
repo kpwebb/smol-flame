@@ -1,8 +1,11 @@
 node_modules
-dist
 .wrangler
 .dev.vars
 .DS_Store
+dist/
+
+# dynamically built by dev server
+static/main.css
 
 # Change them to your taste:
 wrangler.toml

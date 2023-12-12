@@ -1,7 +1,7 @@
 import { Context } from "hono";
 import { HtmlEscapedString } from "hono/utils/html";
 
-export function pageFormat (c:Context, content:HtmlEscapedString) {
+export function pageTemplate (c:Context, content:HtmlEscapedString) {
 return c.html(
         <html>
         <head>
