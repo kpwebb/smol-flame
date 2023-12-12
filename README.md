@@ -6,7 +6,7 @@ Combines:
 - Hono
 - Tailwind + PostCSS
 - Bun (dev)
-- Cloudflare Workers (deploy)
+- Cloudflare Workers/Pages (deploy)
 
 To use: 
 
