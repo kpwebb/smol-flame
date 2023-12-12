@@ -8,7 +8,7 @@ await Bun.build({
     format: "esm"
   });
 
-  fs.renameSync('./dist/server.js', './server/_worker.js'); 
+  fs.renameSync('./dist/server.js', './dist/_worker.js'); 
 }
 catch {
   console.log("ERROR: production build failed");
