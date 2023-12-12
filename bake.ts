@@ -7,6 +7,8 @@ await Bun.build({
     minify: true,
     format: "esm"
   });
+
+  fs.renameSync('./dist/server.js', './server/_worker.js'); 
 }
 catch {
   console.log("ERROR: production build failed");
@@ -34,4 +36,14 @@ fs.cpSync('./static', './dist/static', {recursive: true});
 catch {
   console.log("WARN: copy static files failed");
 }
+
+// copy favicon to root
+try {
+  fs.cpSync('./static/favicon.ico', './dist', {recursive: true});
+  }
+  catch {
+    console.log("WARN: copy favicon failed");
+  }
+  
+  
 
