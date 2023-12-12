@@ -5,7 +5,7 @@ import app from './main'
 
 const worker = new Hono()
 worker.use('/favicon.ico', serveStatic({ path: '/static/favicon.ico' }))
-worker.get('/static/*', serveStatic({ path: '/static/' }))
+app.use('/static/*', serveStatic({ root: './' }))
 
 worker.route('/', app)
 //worker.notFound(app.notFoundHandler)
