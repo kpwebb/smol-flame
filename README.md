@@ -1,6 +1,6 @@
 ## 🕯️ smol-flame
 
-A tiny framework for minimalism on the edge. Maximum legibility, zero magic.
+A tiny template for minimalism on the edge. Maximum legibility, zero magic.
 
 Combines:
 - Hono
