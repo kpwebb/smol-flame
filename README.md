@@ -3,9 +3,9 @@
 A tiny template for minimalism on the edge. Maximum legibility, zero magic.
 
 Combines:
+- Bun (dev/build)
 - Hono
 - Tailwind + PostCSS
-- Bun (dev/build)
 - Cloudflare Pages (deploy via github)
 
 To use: 
