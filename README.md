@@ -1,6 +1,6 @@
 ## 🕯️ smol-flame
 
-A tiny template for minimalism on the edge. Maximum legibility, zero magic.
+A tiny template for static site minimalism on the edge. Maximum legibility, zero magic.
 
 Combines:
 - Bun (dev/build)
